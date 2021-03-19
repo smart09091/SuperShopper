@@ -1,0 +1,259 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8720512946027154492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef78d1e65e02740dca774d4b2d1ecad2, type: 3}
+  m_Name: Detail_sword_Assets
+  m_EditorClassIdentifier: 
+  m_ItemDefinition: {fileID: 8622713837095023904}
+  m_Names:
+  - item_icon
+  m_Values:
+  - Sprites/sword_hud_icon
+--- !u!114 &-8349025350909172658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48b084f2c338a4185ab8badeed2a3947, type: 3}
+  m_Name: _Catalog_Inventories
+  m_EditorClassIdentifier: 
+  m_Database: {fileID: 11400000}
+  m_Items:
+  - {fileID: 8622713837095023904}
+--- !u!114 &-5867566919576786033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c3c0f44711962a40b99131878afcc83, type: 3}
+  m_Name: _Catalog_Stores
+  m_EditorClassIdentifier: 
+  m_Database: {fileID: 11400000}
+  m_Items:
+  - {fileID: 6870300166200568054}
+--- !u!114 &-5696558798337492721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6736b79f77dc474c8bc820c305c2c2e, type: 3}
+  m_Name: Currency_gem
+  m_EditorClassIdentifier: 
+  m_DisplayName: Gem
+  m_Key: gem
+  m_Tags: []
+  m_Catalog: {fileID: 1496837028847240410}
+  m_StaticPropertyKeys: []
+  m_StaticPropertyValues: []
+  m_DetailValues: []
+  m_InitialBalance: 50
+  m_MaximumBalance: 0
+  m_Type: 1
+--- !u!114 &-661465124363512229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9190a04da29ae24ab35e05133ebf087, type: 3}
+  m_Name: _Catalog_Tags
+  m_EditorClassIdentifier: 
+  m_Tags:
+  - {fileID: 7555607935946714736}
+  - {fileID: 3961400049334480201}
+  m_Database: {fileID: 11400000}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6d6d794703b5406883240f543e5b084, type: 3}
+  m_Name: GameFoundationDatabase
+  m_EditorClassIdentifier: 
+  m_TagCatalog: {fileID: -661465124363512229}
+  m_InventoryCatalog: {fileID: -8349025350909172658}
+  m_StoreCatalog: {fileID: -5867566919576786033}
+  m_CurrencyCatalog: {fileID: 1496837028847240410}
+  m_TransactionCatalog: {fileID: 2407780869543656483}
+  m_GameParameterCatalog: {fileID: 1500515307105243279}
+--- !u!114 &1496837028847240410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2da6fd8dcbc743878084f83ab49ad7c, type: 3}
+  m_Name: _Catalog_Currency
+  m_EditorClassIdentifier: 
+  m_Database: {fileID: 11400000}
+  m_Items:
+  - {fileID: 8662371807559685534}
+  - {fileID: -5696558798337492721}
+--- !u!114 &1500515307105243279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90084df6fbe874e7c8e34037839c2070, type: 3}
+  m_Name: _Catalog_GameParameter
+  m_EditorClassIdentifier: 
+  m_Database: {fileID: 11400000}
+  m_Items: []
+--- !u!114 &2407780869543656483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 069acf70dc5a3428cb53df4df156ad59, type: 3}
+  m_Name: _Catalog_Transaction
+  m_EditorClassIdentifier: 
+  m_Database: {fileID: 11400000}
+  m_Items: []
+--- !u!114 &3961400049334480201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4178f7fa125e7644ba2a2d0c6300db1, type: 3}
+  m_Name: Tag_equipment
+  m_EditorClassIdentifier: 
+  m_Key: equipment
+  m_Catalog: {fileID: -661465124363512229}
+--- !u!114 &6870300166200568054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b81b157322addcd439104bd3c59b830b, type: 3}
+  m_Name: Store_main
+  m_EditorClassIdentifier: 
+  m_DisplayName: Main
+  m_Key: main
+  m_Tags: []
+  m_Catalog: {fileID: 0}
+  m_StaticPropertyKeys: []
+  m_StaticPropertyValues: []
+  m_DetailValues: []
+  m_StoreItems: []
+--- !u!114 &7555607935946714736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4178f7fa125e7644ba2a2d0c6300db1, type: 3}
+  m_Name: Tag_weapon
+  m_EditorClassIdentifier: 
+  m_Key: weapon
+  m_Catalog: {fileID: -661465124363512229}
+--- !u!114 &8622713837095023904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcbd052539327467295d2009d33aa660, type: 3}
+  m_Name: Item_sword
+  m_EditorClassIdentifier: 
+  m_DisplayName: Sword
+  m_Key: sword
+  m_Tags:
+  - {fileID: 3961400049334480201}
+  - {fileID: 7555607935946714736}
+  m_Catalog: {fileID: -8349025350909172658}
+  m_StaticPropertyKeys: []
+  m_StaticPropertyValues: []
+  m_DetailValues:
+  - {fileID: -8720512946027154492}
+  m_InitialAllocation: 0
+  m_PropertyKeys:
+  - damage
+  - durability
+  - id
+  m_PropertyDefaultValues:
+  - <type>k__BackingField: 1
+    valueType:
+      longValue: 4624633867356078080
+    stringValue: 
+  - <type>k__BackingField: 0
+    valueType:
+      longValue: 3
+    stringValue: 
+  - <type>k__BackingField: 3
+    valueType:
+      longValue: 0
+    stringValue: 
+--- !u!114 &8662371807559685534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6736b79f77dc474c8bc820c305c2c2e, type: 3}
+  m_Name: Currency_coin
+  m_EditorClassIdentifier: 
+  m_DisplayName: Coin
+  m_Key: coin
+  m_Tags: []
+  m_Catalog: {fileID: 1496837028847240410}
+  m_StaticPropertyKeys: []
+  m_StaticPropertyValues: []
+  m_DetailValues: []
+  m_InitialBalance: 500
+  m_MaximumBalance: 0
+  m_Type: 0
